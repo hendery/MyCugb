@@ -23,7 +23,7 @@ public class WelcomeActivity extends Activity
 		public void run()
 		{
 			Intent intent = new Intent();
-			intent.setClass(WelcomeActivity.this, MyCugbActivity.class);
+			intent.setClass(WelcomeActivity.this, WelcomeGuideActivity.class);
 			startActivity(intent);
 			finish();
 		}

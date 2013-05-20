@@ -44,6 +44,11 @@ public class Constant
 	public static final String CUGB_NEWS_STRING = "地大新闻";
 	public static final String CLASSROOM_SREACH_STRING = "教室查询";
 	public static final String SCORE_SREACH_STRING = "成绩查询";
+	
+	//开始动画的介绍内容
+	public static final String FIRST_GUIDE_STRING = "走进,总有故事";
+	public static final String SECONDE_GUIDE_STRING = "脚下,就是前方";
+	public static final String THIRD_GUIDE_STRING = "这里,挥洒汗水";
 			
 			
 

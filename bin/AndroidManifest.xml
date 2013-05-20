@@ -14,13 +14,14 @@
 		android:theme="@android:style/Theme.NoTitleBar" >
 		<activity
 			android:name="com.mycugb.app.ui.WelcomeActivity"
-			android:label="@string/app_name" >
+			android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
 		</activity>
-		<activity android:name="com.mycugb.app.ui.MyCugbActivity" >
-		</activity>
+		<activity android:name="com.mycugb.app.ui.MyCugbActivity" />
+		<activity android:name="com.mycugb.app.ui.WelcomeGuideActivity" />
 	</application>
 </manifest>
