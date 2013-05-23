@@ -5,5 +5,40 @@
 	android:background="@color/application_bg"
 	android:clickable="true"
 	android:orientation="vertical" >
-	<include layout="@layout/header_layout" />
+	<include
+		android:layout_height="wrap_content"
+		layout="@layout/header_layout" />
+	<LinearLayout
+		android:id="@+id/classroom_search_head"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/classroom_search_head_bg"
+		android:orientation="horizontal" >
+		<Spinner
+			android:id="@+id/classroom_search_building"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:visibility="visible" />
+		<Spinner
+			android:id="@+id/classroom_search_week"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<Spinner
+			android:id="@+id/classroom_search_weekday"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<Spinner
+			android:id="@+id/classroom_search_time"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" >
+		<ListView
+			android:id="@+id/classroom_search_result_list"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" >
+		</ListView>
+	</LinearLayout>
 </LinearLayout>

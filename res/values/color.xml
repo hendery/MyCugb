@@ -2,4 +2,5 @@
 <resources>
 	<color name="application_bg">#ffffff</color>
 	<color name="head_bg">#1C86EE</color>
+	<color name="classroom_search_head_bg">#F8F8FF</color>
 </resources>
