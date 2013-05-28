@@ -1,5 +1,7 @@
 package com.mycugb.app.utils;
 
+import com.mycugb.app.R;
+
 
 /**
  * 应用程序使用到的一些常量数据类
@@ -49,6 +51,19 @@ public class Constant
 	public static final String FIRST_GUIDE_STRING = "走进,总有故事";
 	public static final String SECONDE_GUIDE_STRING = "脚下,就是前方";
 	public static final String THIRD_GUIDE_STRING = "这里,挥洒汗水";
+	
+	//人人树洞
+	public static final String[] PageModeName = { "新鲜事", "资料", "留言板", "相册", "状态", "日志",
+	"分享" };
+    public static final String[] PAGE_ACT_NAMES = { "留言", "返回顶部", "刷新" };
+    public static final int[] PageModeIcon = {
+			R.drawable.profile_popupwindow_type_minifeed_background,
+			R.drawable.profile_popupwindow_type_info_background,
+			R.drawable.profile_popupwindow_type_gossip_background,
+			R.drawable.profile_popupwindow_type_album_background,
+			R.drawable.profile_popupwindow_type_status_background,
+			R.drawable.profile_popupwindow_type_blog_background,
+			R.drawable.profile_popupwindow_type_share_background };
 			
 			
 

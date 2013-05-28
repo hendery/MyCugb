@@ -3,4 +3,8 @@
 	<color name="application_bg">#ffffff</color>
 	<color name="head_bg">#1C86EE</color>
 	<color name="classroom_search_head_bg">#F8F8FF</color>
+	<color name="mode_item_text_color">#FF27a6f5</color>
+	<color name="black">#000000</color>
+	<color name="page_act_item_text">#80333333</color>
+	<color name="page_act_item_text_pressed">#FFFFFF</color>
 </resources>

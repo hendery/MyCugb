@@ -10,8 +10,6 @@ import com.mycugb.app.ui.base.HorizontalScrollContainer.OnOpenListener;
 import com.mycugb.app.ui.base.HorizontalScrollContainer;
 import com.mycugb.app.user.UserLayout;
 import com.mycugb.app.utils.Constant;
-import com.mycugb.app.utils.MyApplication;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
@@ -19,7 +17,6 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.ViewGroup.LayoutParams;
-import android.widget.Toast;
 
 
 /** 
@@ -37,7 +34,6 @@ public class MyCugbActivity extends Activity implements OnOpenListener
 	private CugbNewsLayout cugbNewsLayout;
 	private ClassRoomSearchLayout classRoomSearchLayout;
 	private ScoreSearchLayout scoreSearchLayout;
-	private MyApplication application;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -46,14 +42,13 @@ public class MyCugbActivity extends Activity implements OnOpenListener
 		scrollContainer = new HorizontalScrollContainer(MyCugbActivity.this);
 		LayoutParams params = new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT);
 		scrollContainer.setLayoutParams(params);
-		application = (MyApplication) getApplication();
 
 		leftMenuLayout = new LeftMenuLayout(this);
-		userLayout = new UserLayout(application);
-		treeHoleLayout = new TreeHoleLayout(application);
-		cugbNewsLayout = new CugbNewsLayout(application);
-		classRoomSearchLayout = new ClassRoomSearchLayout(application);
-		scoreSearchLayout = new ScoreSearchLayout(application);
+		userLayout = new UserLayout(this);
+		treeHoleLayout = new TreeHoleLayout(this);
+		cugbNewsLayout = new CugbNewsLayout(this);
+		classRoomSearchLayout = new ClassRoomSearchLayout(this);
+		scoreSearchLayout = new ScoreSearchLayout(this);
 
 		scrollContainer.addView(leftMenuLayout, 0, params);
 		scrollContainer.addView(treeHoleLayout, 1, params);
