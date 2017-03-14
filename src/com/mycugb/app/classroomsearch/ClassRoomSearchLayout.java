@@ -40,6 +40,7 @@ public class ClassRoomSearchLayout extends FrameLayout
 	{
 		super(context);
 		setUpView();
+		System.out.println("hello");
 	}
 
 	private void setUpView()
